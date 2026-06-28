@@ -1,0 +1,19 @@
+What This Code Does
+The provided code creates a static mini-dashboard (web application) that acts as an interactive cheat sheet for developers. Specifically, it simplifies the process of setting up a new React project using Vite.
+
+Here is exactly how the files work together:
+
+index.html builds a clean, dark-mode user interface consisting of a card with three sequential buttons (Steps 1, 2, and 3) and a dark mockup terminal box at the bottom.
+
+style.css adds visual polish, giving the buttons a slight "press" effect (scale(0.98)) when clicked and changing the text highlight color to a glowing cyan.
+
+app.js contains the logic. It listens for clicks on those buttons and dynamically swaps out the text inside the terminal box to show the exact terminal command needed for that step.
+
+How It Improves Day-to-Day Life
+While this specific app is tailored to remember Vite commands for class, the underlying concept of creating personal mini-tools significantly improves a developer's day-to-day workflow in several ways:
+
+Eliminates Context Switching & Brain Drain: Instead of leaving your workspace to search through cluttered documentation, bookmarks, or browser history to find exact terminal flags, a custom cheat sheet keeps your most-used commands in one centralized, accessible place.
+
+Reduces Syntax Errors: Commands like npm create vite@latest my-react-app -- --template react have highly specific syntax. By having a tool where you can click and instantly copy (select-all) the text, you eliminate typos, missing dashes, or forgotten directory names.
+
+Streamlines Project Onboarding: If you work across multiple frameworks (e.g., Next.js, Vite, Docker, or Python virtual environments), you can expand this app into a personal developer portal. Launching a new sandbox environment goes from a multi-step mental check to a 5-second process.

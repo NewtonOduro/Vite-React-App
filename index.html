@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React Quick Setup</title>
+    <!-- Tailwind CSS for modern base styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styling linked here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-md w-full bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-xl space-y-6">
+        
+        <!-- Header -->
+        <div>
+            <span class="text-xs font-semibold tracking-wider uppercase text-cyan-400">Assignment</span>
+            <h1 class="text-xl font-bold text-white mt-1">Vite React App</h1>
+        </div>
+
+        <!-- Interactive Step Buttons -->
+        <div class="space-y-2">
+            <button onclick="showCmd('create')" class="step-btn w-full text-left p-3 rounded-xl bg-gray-800/40 border border-gray-800 hover:border-cyan-500/50 transition focus:outline-none group">
+                <div class="text-xs text-gray-400 group-hover:text-cyan-400 font-medium">Step 1</div>
+                <div class="text-sm font-semibold text-white">Initialize Project</div>
+            </button>
+
+            <button onclick="showCmd('install')" class="step-btn w-full text-left p-3 rounded-xl bg-gray-800/40 border border-gray-800 hover:border-cyan-500/50 transition focus:outline-none group">
+                <div class="text-xs text-gray-400 group-hover:text-cyan-400 font-medium">Step 2</div>
+                <div class="text-sm font-semibold text-white">Install Dependencies</div>
+            </button>
+
+            <button onclick="showCmd('run')" class="step-btn w-full text-left p-3 rounded-xl bg-gray-800/40 border border-gray-800 hover:border-cyan-500/50 transition focus:outline-none group">
+                <div class="text-xs text-gray-400 group-hover:text-cyan-400 font-medium">Step 3</div>
+                <div class="text-sm font-semibold text-white">Start Dev Server</div>
+            </button>
+        </div>
+
+        <!-- Terminal Output -->
+        <div class="bg-black border border-gray-800 rounded-xl p-4 font-mono text-xs relative group">
+            <div class="text-gray-500 mb-2">// Terminal Command</div>
+            <div id="cmd-display" class="text-emerald-400 font-bold select-all cursor-pointer">
+                npm create vite@latest my-react-app -- --template react
+            </div>
+            <div class="absolute right-3 top-3 text-[10px] text-gray-600 group-hover:block hidden">Click text to select</div>
+        </div>
+    </div>
+
+    <!-- Interactive Script linked here -->
+    <script src="app.js"></script>
+</body>
+</html>

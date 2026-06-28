@@ -1,0 +1,16 @@
+/* Custom subtle animations and tweaks for elements */
+
+.step-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Adds a tiny punch effect when you click a step button */
+.step-btn:active {
+    transform: scale(0.98);
+}
+
+/* Custom glow effect on the terminal font selection */
+#cmd-display::selection {
+    background: rgba(34, 211, 238, 0.2);
+    color: #22d3ee;
+}
